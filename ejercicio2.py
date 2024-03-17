@@ -64,7 +64,7 @@ comanda = [entrante, principal, segundo,postre]
 print(pagar(comanda))
 '''
 
-
+'''
 print('SOLUCION 4')
 def pagar():
   total = 0
@@ -90,7 +90,7 @@ Menu = {
 #Menu = ['entrante','segundo','postre']
 
 print(pagar)
-
+'''
 '''
 print(comanda)
 
@@ -106,12 +106,10 @@ print(cuenta)
 
 
 
-'''
 print('FORMA OPTIMA')
 
 def total_a_pagar(Menu, comanda): 
   return sum(Menu[Key] for Key in comanda if Key in Menu)
-
 Menu = {
   'entrante': 10,
   'principal': 15,
@@ -125,8 +123,9 @@ comanda = ['entrante','segundo','postre']
 
 cuenta = total_a_pagar(Menu,comanda) * 1.15
 print(cuenta)  
-'''
 
+comanda = ['entrante','segundo','postre', 'copa']
+print(cuenta)
 
 
   
