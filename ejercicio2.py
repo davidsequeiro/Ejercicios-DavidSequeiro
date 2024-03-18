@@ -38,10 +38,10 @@ for plato,precio in Menu.items():
 Cuenta = Total_tiquet * 1.15
 print(Total_tiquet)
 print(Cuenta)
+'''
 
 
-
-print('SOLUCION 3') # definimos funcion para aplicarf a cada comanda y las variables de cada plato
+print('SOLUCION 3') # definimos funcion para aplicar a cada comanda y las variables de cada plato
 
 def pagar(precios):
   total = sum(comanda)
@@ -62,11 +62,12 @@ print(pagar(comanda))
 
 comanda = [entrante, principal, segundo,postre]
 print(pagar(comanda))
-'''
+
 
 '''
-print('SOLUCION 4')
-def pagar():
+print('SOLUCION 4') #intento hacerlo desde un dicionario pero no soy capaz
+
+def pagar(Menu,comanda):
   total = 0
   for plato,precio in Menu.items():
     total += (precio)
@@ -83,33 +84,19 @@ Menu = {
   'copa': 15
   }
 
+comanda = ['entrante','segundo','postre']
 
-
-
-
-#Menu = ['entrante','segundo','postre']
 
 print(pagar)
 '''
+
+
+
 '''
-print(comanda)
-
-total = 0
-for plato,precio in Menu.items():
-  total += (precio)
-print(total)
-propina = 1.15
-cuenta = total * propina
-print(cuenta)
-'''
-
-
-
-
 print('FORMA OPTIMA')
 
 def total_a_pagar(Menu, comanda): 
-  return sum(Menu[Key] for Key in comanda if Key in Menu)
+  return sum(Menu[plato] for plato in comanda if plato in Menu)
 Menu = {
   'entrante': 10,
   'principal': 15,
@@ -124,9 +111,9 @@ comanda = ['entrante','segundo','postre']
 cuenta = total_a_pagar(Menu,comanda) * 1.15
 print(cuenta)  
 
-comanda = ['entrante','segundo','postre', 'copa']
+comanda = ['entrante','segundo','postre','copa'] # no consigo que al cambiar la comanda me de el nuevo valor
 print(cuenta)
-
+'''
 
   
   
