@@ -6,7 +6,7 @@ Crea un programa que calcule el monto total a pagar en un restaurante, incluyend
 print('SOLUCION 1') #Definir unas variables y asignar precio y sumar sobre la comanda
 
 entrante = 10
-principal = 15
+principal = 18
 segundo = 20
 postre = 8
 cafe = 2
@@ -25,7 +25,7 @@ print('SOLUCION 2')   #Definimos un diccionario donde se incluyen los platos y p
 
 Menu = {
   'entrante': 10,
-  'principal': 15,
+  'principal': 18,
   'segundo': 20,
   'postre': 8,
   'cafe': 2,
@@ -47,7 +47,7 @@ def pagar(precios):
   return total * 1.15
 
 entrante = 10
-principal = 15
+principal = 18
 segundo = 20
 postre = 8
 cafe = 2
@@ -78,7 +78,7 @@ def pagar(Menu,comanda):
 
 Menu = {
   'entrante': 10,
-  'principal': 15,
+  'principal': 18,
   'segundo': 20,
   'postre': 8,
   'cafe': 2,
@@ -106,7 +106,7 @@ def total_a_pagar(Menu, comanda):
   return sum(Menu[plato] for plato in comanda if plato in Menu) * 1.15
 Menu = {
   'entrante': 10,
-  'principal': 15,
+  'principal': 18,
   'segundo': 20,
   'postre': 8,
   'cafe': 2,
