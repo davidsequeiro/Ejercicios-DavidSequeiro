@@ -8,5 +8,5 @@ for letra in palabra:
   if letra in vocales:
     contar += 1
     print(letra)
-print('El total de letras es: ' ,contar)
+print('El total de vocales es: ' ,contar)
     
