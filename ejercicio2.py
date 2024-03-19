@@ -99,8 +99,7 @@ print(pagar(Menu,comanda))
 
 
 
-
-print('FORMA OPTIMA') # Solucion adaptando consulta chatGpt
+print('SOLUCION OPTIMA') # Solucion adaptando consulta chatGpt
 
 def total_a_pagar(Menu, comanda): 
   return sum(Menu[plato] for plato in comanda if plato in Menu) * 1.15
