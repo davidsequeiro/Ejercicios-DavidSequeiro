@@ -9,4 +9,3 @@ if edad >=18:
 else:
   print('no eres mayor de edad')
 
-print('solucion')
