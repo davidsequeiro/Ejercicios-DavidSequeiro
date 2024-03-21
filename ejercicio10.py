@@ -6,7 +6,7 @@ número ingresado por el usuario (1 para lunes, 2 para martes, etc.).
 
 dia= int(input('ingreasa un numero del 1 al 7:'))
 
-semana = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Viernes', 'Sabado', 'Domingo']
+semana = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
 
 if dia > 7:
   print('Numero no valido')
