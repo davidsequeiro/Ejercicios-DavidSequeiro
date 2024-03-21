@@ -2,15 +2,43 @@
 Crea un programa que realice operaciones aritméticas simples (suma, resta,
 multiplicación, división) según la elección del usuario.
 '''
-a = 0
-b = 0
 
-suma = a + b
-resta = a - b
+
+a = int(input('Intruduzca valor 1: '))
+b = int(input('Intruduzca valor 2: '))
+
+sumar = a + b
+restar = a - b
 multiplicar = a * b
 dividir = a / b
 
-operacion = [suma, resta , multiplicar, dividir]
+operaciones = {
+    1: sumar,
+    2: restar,
+    3: multiplicar,
+    4: dividir
+    }
 
-def operar(a,b):
-  for operacion in 
+
+print('1.- sumar, 2.-restar, 3.-multiplicar, 4.-dividir')
+operacion = int(input('Introduzca operacion: '))
+
+
+print(operaciones[operacion])
+
+
+#def operar(a,b):
+  #for operacion in 
+  
+'''
+
+operaciones = [sumar, restar, multiplicar, dividir]
+
+
+operaciones = {
+    1: 'sumar',
+    2: 'restar',
+    3: 'multiplicar',
+    4: 'dividir'
+    }
+'''
