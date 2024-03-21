@@ -27,18 +27,3 @@ operacion = int(input('Introduzca operacion: '))
 print(operaciones[operacion])
 
 
-#def operar(a,b):
-  #for operacion in 
-  
-'''
-
-operaciones = [sumar, restar, multiplicar, dividir]
-
-
-operaciones = {
-    1: 'sumar',
-    2: 'restar',
-    3: 'multiplicar',
-    4: 'dividir'
-    }
-'''
