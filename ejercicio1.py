@@ -3,20 +3,21 @@ Ejercicio 1: Conversor de Temperatura
 Escribe un programa que convierta una temperatura de grados Celsius a grados Fahrenheit.
 
 Formula de calculo
-a = 32  # Temperatura en grados Celsius
+a = Temperatura en grados Celsius
 b = a*(9/5)+32  # Formula de conversion Celsius a Farenheit
-print(a,'Celsius, es igual a ',b,'Farenheit')  #Respuesta de solucion
 '''
 
-def convertir(a):
+# Soilicitamos valor de a = grados celsius
+a = float(input('Ingresa un valor para temperatura en grados Celsius: ')) 
+
+# creamos funcion para convertir mediante formula
+def convertir(a): 
   b = a*(9/5)+32  # Formula de conversion Celsius a Farenheit
-  print(a)
-  print(b)
-  print(a,'Celsius es igual a ',b,'Farenheit')  #Respuesta de solucion
+  return b
 
-a = 25
-print(convertir(a))
+#Respuesta de solucion
+print(a,'grados Celsius es igual a ',convertir(a), 'grados Farenheit') 
 
-a = 32
-print(convertir(a))
+
+
 
