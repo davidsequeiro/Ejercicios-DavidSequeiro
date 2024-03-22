@@ -33,8 +33,7 @@ print('1.- sumar, 2.-restar, 3.-multiplicar, 4.-dividir')
 operacion = int(input('Introduzca operacion: '))
 
 # Resultado
-print(operaciones[operacion])
-
+#print(operaciones[operacion])
 
 print('el resultado de ', texto[operacion], a, ' y ', b, ' es ',operaciones[operacion])
 
