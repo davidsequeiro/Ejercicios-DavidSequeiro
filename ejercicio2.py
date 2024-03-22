@@ -68,6 +68,7 @@ print(pagar(comanda))
 
 print('SOLUCION 4') #Definimos un dictionario desde el que calcular el importe segun las distintas comandas
 
+# Definimos funcion para el calculo de cada comanda
 def pagar(Menu,comanda):
   total = 0     
   for plato,precio in Menu.items():
@@ -76,7 +77,7 @@ def pagar(Menu,comanda):
   propina = 1.15
   cuenta = total * propina
   return cuenta
-
+# Definimos un diccionario con los platos y su importe
 Menu = {
   'entrante': 10,
   'principal': 18,
@@ -86,21 +87,71 @@ Menu = {
   'copa': 15
   }
 
+# Introduciomos comandas y obtenemos importe llamando a la funcion definida
 comanda = ['entrante','segundo','postre']
-
-
 print(pagar(Menu,comanda))
-
 
 comanda = ['entrante','principal','segundo','postre']
-
-
 print(pagar(Menu,comanda))
+'''
 
 
 
+print('SOLUCION DINAMICA') # Solucion con ayuda de ChatGPT para transformar en lista los numeros introducidos por el usuario
 
-print('SOLUCION OPTIMA') # Solucion adaptando consulta chatGpt
+# Definimos variables de los platos y sus precios
+entrante = 10
+principal = 18
+segundo = 20
+postre = 8
+cafe = 2
+copa = 15
+
+# Definimos variable e importe de propina
+propina = 1.15
+
+# Creamos un diccionario con los platos
+menu = {
+  1 : entrante,
+  2 : principal,
+  3 : segundo,
+  4 : postre,
+  5 : cafe,
+  6 : copa 
+}
+
+# Solicitamos introduzcan numero correspondiente a los platos
+comanda = input('elija los numeros de los platos, separadaos por comas : (1-entrante, 2-principal, 3-segundo, 4-postre, 5-cafe, 6-copa)' )
+
+# Transformamos en lista
+lista = [int(numero) for numero in comanda.split(',')]
+
+# Definimos la funcion para calcular la suma del importe de los platos elegidos
+def pagar(menu,lista):
+  total = 0     
+  for plato,precio in menu.items():
+      if plato in lista:
+         total += precio
+          
+  cuenta = total * propina
+  return cuenta
+
+# Resultado
+print(f'El total de la cuenta con propina es:  {pagar(menu,lista):.2f} euros')
+
+
+
+'''
+# Solucion ChatGPT
+total = sum(menu[plato] 
+            for plato in lista 
+            if plato in menu)
+
+print(f'El total de la cuenta con propina es:  {cuenta:.2f} euros')
+
+
+
+# Solucion2 adaptando consulta2 chatGpt
 
 def total_a_pagar(Menu, comanda): 
   return sum(Menu[plato] for plato in comanda if plato in Menu) * 1.15
@@ -118,34 +169,4 @@ print(total_a_pagar(Menu,comanda))
 
 comanda = ['entrante','segundo','postre','copa'] 
 print(total_a_pagar(Menu,comanda))
-
 '''
-
-
-
-print('SOLUCION DINAMICA') 
-
-entrante = 10
-principal = 18
-segundo = 20
-postre = 8
-cafe = 2
-copa = 15
-
-propina = 1.15
-
-menu = {
-  1 : entrante,
-  2 : principal,
-  3 : segundo,
-  4 : postre,
-  5 : cafe,
-  6 : copa 
-}
-
-comanda = input('elija los numeros de los platos, separadaos por comas : (1-entrante, 2-principal, 3-segundo, 4-postre, 5-cafe, 6-copa)' )
-  
-lista = [int(numero) for numero in comanda.split(',')]
-
-total = sum(menu[plato] for plato in lista if plato in menu) * propina
-print(f'El total de la cuenta con propina es:  {total:.2f} euros')
