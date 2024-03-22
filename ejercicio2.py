@@ -3,6 +3,7 @@ Ejercicio 2: Calculadora de Propina
 Crea un programa que calcule el monto total a pagar en un restaurante, incluyendo una propina del 15% sobre el total de la cuenta.
 '''
 
+'''
 print('SOLUCION 1') #Definir unas variables y asignar precio y sumar sobre la comanda
 
 entrante = 10
@@ -53,7 +54,7 @@ postre = 8
 cafe = 2
 copa = 15
 
-comanda = [entrante, principal, segundo,postre,cafe,copa]
+comanda = [entrante, principal, segundo, postre, cafe, copa]
 print(pagar(comanda))
 
 comanda = [entrante, principal]
@@ -118,9 +119,33 @@ print(total_a_pagar(Menu,comanda))
 comanda = ['entrante','segundo','postre','copa'] 
 print(total_a_pagar(Menu,comanda))
 
+'''
+
+
+
+print('SOLUCION DINAMICA') 
+
+entrante = 10
+principal = 18
+segundo = 20
+postre = 8
+cafe = 2
+copa = 15
+
+propina = 1.15
+
+menu = {
+  1 : entrante,
+  2 : principal,
+  3 : segundo,
+  4 : postre,
+  5 : cafe,
+  6 : copa 
+}
+
+comanda = input('elija los numeros de los platos, separadaos por comas : (1-entrante, 2-principal, 3-segundo, 4-postre, 5-cafe, 6-copa)' )
   
-  
+lista = [int(numero) for numero in comanda.split(',')]
 
-
-
-
+total = sum(menu[plato] for plato in lista if plato in menu) * propina
+print(f'El total de la cuenta con propina es:  {total:.2f} euros')
