@@ -13,6 +13,7 @@ def pares(num):
 
 # Solicitamos al usuario que ingrese los numeros a su elecion
 numero_selec = input('Ingresa los valores separados por coma: ')
+
 # Definimos una lista con los numeros elegidos por el usuario
 lista = [int(numero) for numero in numero_selec.split(',')]  
 
