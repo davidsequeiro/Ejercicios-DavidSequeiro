@@ -14,8 +14,8 @@ numero = int(input("Ingresa un número para verificar si es primo: "))
 a = range(2, int(numero ** 0.5) + 1) #raiz cuadrada
 
 # Aplicamos formula al numero seleccionado y el rango obtenido
-for i in a:
-  if numero % i == 0:
+for num in a:
+  if numero % num == 0:
     print('El numero',numero,'no es primo')
   else:
     print('El numero',numero,'es primo')
