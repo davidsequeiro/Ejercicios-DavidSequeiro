@@ -4,7 +4,7 @@ descuento del 20%.
 '''
 
 # Definimos el descuento
-dto= 0.20
+dto = 0.20
 descuento = 1 - dto
 
 # Solicitamos el importe del articulo
