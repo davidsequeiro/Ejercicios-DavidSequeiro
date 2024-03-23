@@ -12,7 +12,7 @@ Cualquier año divisible por 4 es bisiesto
 año = int(input('Introduzca año para saber si es bisiesto: '))
 
 # Aplicamos la formula
-if año / 4 == 0:
-  print('El año ',año,' no es bisiesto')
-else:
+if año % 4 == 0:
   print('El año ',año,' es bisiesto')
+else:
+  print('El año ',año,' no es bisiesto')
