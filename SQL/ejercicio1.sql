@@ -18,4 +18,4 @@
 17. Realizar una consulta que muestre el nombre del producto y la cantidad total de pedidos de ese producto. 
 18. Agregar una columna llamada "fecha" a la tabla "Pedidos" de tipo fecha. 
 19. Agregar una clave externa a la tabla "Pedidos" que haga referencia a la tabla "Productos" en la columna "producto". 
-20. Realizar una consulta que muestre los nombres de los clientes, los nombres de los productos y las cantidades de los pedidos donde coincida la clave externa.
+20. Realizar una consulta que muestre los nombres de los clientes, los nombres de los productos y las cantidades de los pedidos donde coincida la clave externa.*/
