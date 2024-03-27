@@ -5,7 +5,7 @@ CREATE TABLE clientes(
     nombre VARCHAR(255) NOT NULL,
     email VARCHAR(255)
 )
-
+/**/
 /*2. Insertar un nuevo cliente en la tabla "Clientes" con id=1, nombre="Juan" y email=" juan@example.com". */
 INSERT INTO public.clientes (nombre, email)
 VALUES ('Juan','juan@example.com')
