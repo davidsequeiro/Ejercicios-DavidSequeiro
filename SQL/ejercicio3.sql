@@ -33,7 +33,7 @@ nombres de los productos que han comprado (utiliza un INNER JOIN con la
 tabla "Productos").
 */
 
---Antes debemos crear la columna productos_id y referenciarla a productos(id)
+--Antes debemos crear la columna producto_id y referenciarla a productos(id)
 ALTER TABLE usuarios
 ADD COLUMN producto_id INT
 
