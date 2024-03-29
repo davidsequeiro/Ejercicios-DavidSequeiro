@@ -17,5 +17,5 @@ if dia <= 7:
   print(semana[dia-1])
 
 # Resultado
-  print(('El '), dia, ('dia de la semana es: '), semana[dia-1])
+  print('El ', dia, 'dia de la semana es: ', semana[dia-1])
 
